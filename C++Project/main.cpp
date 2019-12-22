@@ -14,7 +14,6 @@ int main()
 	bool didOneOperation = false; //to check if the program can prompt the user to operate on previous result, is set to true after you do one operation with the first_Num and second_Num
 
 	first_Num_Prompt(first_Num);
-	
 	operation_Setting_input(operation_Setting);
 	while (didOneOperation != true)
 	{
