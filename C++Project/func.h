@@ -71,8 +71,8 @@ void modulus_By(int& past, int& present, int& after, bool& Operate, std::string&
 
 void first_Num_Prompt(int& first)
 {
-    std::cout << "Your First Number?" << std::endl; //prompt for first number
-    std::cin >> first; //first number input by user
+    std::cout << "Your First Number?" << std::endl; 
+    std::cin >> first; 
     while (std::cin.fail())
     {
         std::cout << "Input an integer only with no spaces or characters" << std::endl;
@@ -84,9 +84,9 @@ void first_Num_Prompt(int& first)
 
 void second_Num_Prompt_add(int& second, int& first, int& past, bool& Operate, std::string setting)
 {
-    if (setting == "+")//addition                                // Way too many if statements, maybe could be shortened
+    if (setting == "+")                        
     {
-        std::cout << "Your Second Number?" << std::endl; //prompts second number          
+        std::cout << "Your Second Number?" << std::endl;          
         std::cin >> second;
         while (std::cin.fail())
         {
@@ -103,9 +103,9 @@ void second_Num_Prompt_add(int& second, int& first, int& past, bool& Operate, st
 
 void second_Num_Prompt_subtract(int& second, int& first, int& past, bool& Operate, std::string setting)
 {
-    if (setting == "-")//addition                                // Way too many if statements, maybe could be shortened
-    {
-        std::cout << "Your Second Number?" << std::endl; //prompts second number          
+    if (setting == "-")
+    {                     
+        std::cout << "Your Second Number?" << std::endl;      
         std::cin >> second;
         while (std::cin.fail())
         {
@@ -122,9 +122,9 @@ void second_Num_Prompt_subtract(int& second, int& first, int& past, bool& Operat
 
 void second_Num_Prompt_multiply(int& second, int& first, int& past, bool& Operate, std::string setting)
 {
-    if (setting == "*")//addition                                // Way too many if statements, maybe could be shortened
+    if (setting == "*")
     {
-        std::cout << "Your Second Number?" << std::endl; //prompts second number          
+        std::cout << "Your Second Number?" << std::endl;  
         std::cin >> second;
         while (std::cin.fail())
         {
@@ -141,9 +141,9 @@ void second_Num_Prompt_multiply(int& second, int& first, int& past, bool& Operat
 
 void second_Num_Prompt_divide(int& second, int& first, int& past, bool& Operate, std::string setting)
 {
-    if (setting == "/")//addition                                // Way too many if statements, maybe could be shortened
+    if (setting == "/")
     {
-        std::cout << "Your Second Number?" << std::endl; //prompts second number          
+        std::cout << "Your Second Number?" << std::endl;          
         std::cin >> second;
         while (std::cin.fail())
         {
@@ -160,9 +160,9 @@ void second_Num_Prompt_divide(int& second, int& first, int& past, bool& Operate,
 
 void second_Num_Prompt_modulus(int& second, int& first, int& past, bool& Operate, std::string &setting)
 {
-    if (setting == "%")//addition                                // Way too many if statements, maybe could be shortened
+    if (setting == "%")
     {
-        std::cout << "Your Second Number?" << std::endl; //prompts second number          
+        std::cout << "Your Second Number?" << std::endl;        
         std::cin >> second;
         while (std::cin.fail())
         {
@@ -180,9 +180,8 @@ void second_Num_Prompt_modulus(int& second, int& first, int& past, bool& Operate
 void operation_Setting_input(std::string &z)
 {
     std::cout << "+ for add, - for subtract, * for multiply, / for divide, and % for modulus. Type one to choose operator" << std::endl;
-    //prompt for operator
-    std::cin >> z; //input the operator
-    if (z != "+" && z != "-" && z != "*" && z != "/" && z != "%")
+    std::cin >> z;
+    if (z != "+" && z != "-" && z != "*" && z != "/" && z != "%")//checks for z and filters out unwanted/incorrect input
     {
         while (z != "+" && z != "-" && z != "*" && z != "/" && z != "%")
         {
